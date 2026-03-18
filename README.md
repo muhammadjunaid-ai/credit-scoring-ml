@@ -39,3 +39,8 @@ credit-scoring-ml-project/
 ├─ app.py                    # Streamlit application
 ├─ requirements.txt          # Python dependencies
 └─ README.md                 # Project documentation
+
+## Author
+Muhammad Junaid
+BS Artificial Intelligence
+GitHub: https://github.com/muhammadjunaid-ai
