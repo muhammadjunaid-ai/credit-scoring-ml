@@ -1,74 +1,31 @@
-🏦 Credit Scoring ML App
-Live Demo: https://muhammadjunaid.streamlit.app
-Predict an individual’s creditworthiness using financial data with a Random Forest model and interactive Streamlit interface.
-🔍 About the Project
-Builds a credit scoring model to classify applicants as good or bad credit risks based on financial and personal attributes using a Random Forest classifier.
-📂 Project Structure
+⁠🏦 Credit Scoring ML App
+https://muhammadjunaid.streamlit.app/
 
+An AI-powered application that predicts an individual’s creditworthiness using financial data. The app classifies applicants as good or bad credit risks using Random Forest and provides an interactive Streamlit web interface.
+
+🔹 Features
+Predicts creditworthiness based on financial history
+Handles both categorical and numerical features automatically
+Displays probability and classification (Good/Bad)
+Interactive Streamlit web interface for easy input
+Can be extended to include more financial features or datasets
+🛠 Technologies Used
+
+Python – Core programming language
+Pandas – Data preprocessing and management
+Scikit-learn – Random Forest model & preprocessing
+Joblib – Saving model and mappings
+Streamlit – Web app interface
+
+📂 Project Structure
+Plain text
 credit-scoring-ml-project/
 │
 ├─ model/
-│   ├─ credit_model.pkl      # Trained model
-│   ├─ mappings.pkl          # Categorical encodings
+│   ├─ credit_model.pkl      # Trained Random Forest model
+│   ├─ mappings.pkl          # Encodings for categorical features
 ├─ dataset.csv               # Credit dataset
-├─ train_model.py            # Train & save model
+├─ train_model.py            # Script to train the model
 ├─ app.py                    # Streamlit application
-├─ requirements.txt          # Dependencies
-└─ README.md
-🧠 Model Overview
-Algorithm: Random Forest Classifier
-Encoding: Categorical mappings saved in mappings.pkl
-Saved Model: credit_model.pkl
-Prediction: Good or Bad credit risk
-⚙️ Setup & Installation
-Clone repository:
-Bash
-git clone https://github.com/muhammadjunaid-ai/credit-scoring-ml.git
-cd credit-scoring-ml
-Create & activate virtual environment:
-Bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-Install dependencies:
-Bash
-pip install -r requirements.txt
-🏗️ Training the Model
-Bash
-python train_model.py
-Generates:
-model/credit_model.pkl
-model/mappings.pkl
-🌐 Running the App
-Bash
-streamlit run app.py
-Access locally: http://localhost:8501
-🧪 How to Use the App
-Select categorical fields: Status Account, Credit History, Purpose, Status Savings
-Enter numeric values: Loan duration (months), Credit amount
-Click Predict Creditworthiness
-View result: Good or Bad
-💡 Key Features
-Interactive Streamlit UI
-Live predictions with probability
-Automatic handling of categorical mappings
-Easy retraining & deployment
-📌 Dependencies
-pandas
-scikit-learn
-streamlit
-joblib
-Listed in requirements.txt
-📜 Dataset Information
-Columns:
-status_account
-month_duration
-credit_history
-purpose
-credit_amount
-status_savings
-target (good/bad credit)
-✨ Live App
-https://muhammadjunaid.streamlit.app⁠
+├─ requirements.txt          # Python dependencies
+└─ README.md                 # Project documentation
