@@ -1,0 +1,13 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyd
+
+# Ignore model files (optional if you don’t want to push them)
+model/
+
+# Ignore system files
+.DS_Store
